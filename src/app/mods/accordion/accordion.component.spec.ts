@@ -11,9 +11,10 @@ describe('AccordionComponent', () => {
       declarations: [ AccordionComponent ]
     })
     .compileComponents();
-  }));
+  }));  
 
   beforeEach(() => {
+    
     fixture = TestBed.createComponent(AccordionComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
