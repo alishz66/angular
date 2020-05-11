@@ -1,0 +1,6 @@
+<form (submit)="onFormSubmit($event)">
+    <div class="ui fluid icon input">
+        <i class="inverted circular search link icon"></i>
+        <input placeholder="Enter Search Term" type="text" (input)="term=$event.target.value">
+    </div>
+</form>

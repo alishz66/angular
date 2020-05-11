@@ -21,6 +21,10 @@ const routes: Routes = [
     path: 'mods', loadChildren: () => import('./mods/mods.module')
       .then((m) => m.ModsModule)
   },
+  {
+    path: 'wsearch', loadChildren: () => import('./wsearch/wsearch.module')
+      .then((m) => m.WsearchModule)
+  },
   { path: '', component: HomeComponent },
   { path: '**', component: NotFoundComponent }
 ];
