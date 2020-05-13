@@ -25,6 +25,10 @@ const routes: Routes = [
     path: 'wsearch', loadChildren: () => import('./wsearch/wsearch.module')
       .then((m) => m.WsearchModule)
   },
+  {
+    path: 'creditCard', loadChildren: () => import('./credit-card/credit-card.module')
+      .then((m) => m.CreditCardModule)
+  },
   { path: '', component: HomeComponent },
   { path: '**', component: NotFoundComponent }
 ];

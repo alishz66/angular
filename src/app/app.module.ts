@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { HttpClientModule } from '@angular/common/http'
 import { AppRoutingModule } from './app-routing.module';
@@ -11,12 +12,13 @@ import { NotFoundComponent } from './not-found/not-found.component';
   declarations: [
     AppComponent,
     HomeComponent,
-    NotFoundComponent
+    NotFoundComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

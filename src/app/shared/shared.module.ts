@@ -1,16 +1,20 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { DividerComponent } from './divider/divider.component';
+import { InputComponent } from './input/input.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 
 @NgModule({
-  declarations: [DividerComponent],
+  declarations: [DividerComponent, InputComponent],
   imports: [
-    CommonModule
+    CommonModule,
+    ReactiveFormsModule
   ],
-  exports:[
-    DividerComponent
+  exports: [
+    DividerComponent,
+    InputComponent
   ]
 })
 export class SharedModule { }
